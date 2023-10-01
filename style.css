@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Wadah {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 320px 1fr;
+    grid-template-areas:
+        'Judul Judul'
+        'Papankiri Papankanan';
+    background-color: aliceblue;
+}
+
+.Wadah .Judul {
+    grid-area: Judul;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Wadah .Judul img {
+    border-radius: 140px;
+}
+
+.Wadah .Judul .Nama .Lengkap {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Wadah .Judul .Nama .Gelar {
+    font-size: 40px;
+}
+
+.Wadah .Papankiri {
+    grid-area: Papankiri;
+}
+
+.Wadah .Papankanan {
+    grid-area: Papankanan;
+}
+
+.Wadah .Papankiri,
+.Wadah .Papankanan {
+    min-height: calc(100vh - 320px);
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.JudulSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.JudulSub .Icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    background-color: gray;
+    background-image: url("");
+}
+
+.JudulSub h6 {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.Paragraf {
+    margin-top: 14px;
+    line-height: 21px;
+}
+
+.Wadah .Papankiri .Contact .Paragraf {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Wadah .Papankiri .Contact .Paragraf .ParagSub {
+    display: flex;
+    gap: 8px;
+}
+
+.Wadah .Papankiri .Contact .Paragraf .ParagSub .Icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    background-color: gray;
+    background-image: url("");
+}
+
+
